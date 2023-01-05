@@ -9,15 +9,15 @@ RUN curl -sL https://deb.nodesource.com/setup_19.x | bash -\
   && rm -rf /var/lib/apt/lists/*\
   && npm install -g yarn
 
-RUN mkdir /myapp
-WORKDIR /myapp
+RUN mkdir /app
+WORKDIR /app
 
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
+COPY Gemfile /app/Gemfile
+COPY Gemfile.lock /app/Gemfile.lock
 
 RUN bundle install
 
-COPY . /myapp
+COPY . /app
 
 RUN yarn install
 
