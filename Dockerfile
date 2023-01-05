@@ -21,6 +21,8 @@ COPY . /app
 
 RUN yarn install
 
+ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
+
 EXPOSE 3000
 
 CMD "bin/dev"
