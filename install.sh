@@ -15,6 +15,7 @@ curl -o "bin/docker-entrypoint-web" "$DOCKER_REPO/docker-entrypoint-web"
 sed -i '' 's/-p 3000/-p 3000 -b 0.0.0.0/' Procfile.dev
 
 # commit changes
+git fetch
 git add .
 git commit origin -m "Added docker"
 
