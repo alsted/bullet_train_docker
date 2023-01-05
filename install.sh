@@ -9,7 +9,7 @@ bin/configure
 # install docker configuration
 curl -o "Dockerfile" "$DOCKER_REPO/Dockerfile"
 curl -o "docker-compose.yml" "$DOCKER_REPO/docker-compose.yml"
-curl -o "bin/docker-entrypoint-web" "$DOCKER_REPO/docker-compose.yml"
+curl -o "bin/docker-entrypoint-web" "$DOCKER_REPO/docker-entrypoint-web"
 
 # puma should not listen to localhost only
 sed -i '' 's/-p 3000/-p 3000 -b 0.0.0.0/' Procfile.dev
