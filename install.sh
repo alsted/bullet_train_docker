@@ -2,6 +2,8 @@
 
 DOCKER_REPO="https://raw.githubusercontent.com/kubicek/bullet_train_docker/main"
 
+echo "alsted fork"
+
 # install and execute and alternate configuration script
 curl -o "bin/configure" "$DOCKER_REPO/bin/configure"
 bin/configure
