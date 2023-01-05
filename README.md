@@ -19,8 +19,7 @@ If you're building a new application with Bullet Train, you don't want to "Fork"
 3. Run the instalation and configuration script:
 
     ```
-    $ /bin/bash -c "$(curl -fsSL 
-https://raw.githubusercontent.com/alsted/bullet_train_docker/main/install.sh)"
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/alsted/bullet_train_docker/main/install.sh)"
     ```
 
 <br>
