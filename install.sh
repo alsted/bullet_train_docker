@@ -15,7 +15,7 @@ sed -i '' 's/-p 3000/-p 3000 -b 0.0.0.0/' Procfile.dev
 
 # commit changes
 git add .
-git commit -m "Added docker"
+git commit origin -m "Added docker"
 
 # build image
 docker compose build
