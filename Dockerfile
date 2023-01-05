@@ -1,4 +1,4 @@
-FROM ruby:3
+FROM ruby:3.2.0
 
 # based on https://github.com/timbru31/docker-ruby-node/blob/master/3.1/16/Dockerfile
 RUN curl -sL https://deb.nodesource.com/setup_17.x | bash -\
