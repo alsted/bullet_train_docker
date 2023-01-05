@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCKER_REPO="https://raw.githubusercontent.com/kubicek/bullet_train_docker/main"
+DOCKER_REPO="https://raw.githubusercontent.com/alsted/bullet_train_docker/main"
 
 echo "alsted fork"
 
