@@ -16,6 +16,9 @@ curl -o "bin/docker-entrypoint-web" "$DOCKER_REPO/docker-entrypoint-web"
 # puma should not listen to localhost only
 sed -i '' 's/-p 3000/-p 3000 -b 0.0.0.0/' Procfile.dev
 
+#set 755 on entrypoint
+chmod 755 bin/docker-entrypoint-web
+
 # commit changes
 git fetch
 git add .
